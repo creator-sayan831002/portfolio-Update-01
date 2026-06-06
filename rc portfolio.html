@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohan Choudhary | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(-45deg,#0f172a,#1e293b,#4f46e5,#06b6d4);
+    background-size:400% 400%;
+    animation:bg 12s ease infinite;
+    color:white;
+    overflow-x:hidden;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.card{
+    width:1100px;
+    max-width:95%;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    border-radius:30px;
+    padding:40px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+    box-shadow:0 20px 60px rgba(0,0,0,.5);
+    transition:.5s;
+}
+
+.card:hover{
+    transform:rotateX(5deg) rotateY(-5deg);
+}
+
+.left{
+    flex:1;
+    text-align:center;
+}
+
+.left img{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    box-shadow:0 0 40px cyan;
+    animation:glow 3s infinite;
+}
+
+@keyframes glow{
+    50%{
+        box-shadow:0 0 70px #00ffff;
+    }
+}
+
+.left h1{
+    margin-top:20px;
+    font-size:42px;
+}
+
+.left h2{
+    color:#a5f3fc;
+    font-weight:400;
+}
+
+.social{
+    margin-top:25px;
+}
+
+.social a{
+    text-decoration:none;
+    color:white;
+    display:block;
+    margin:12px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#00ffff;
+    transform:translateX(10px);
+}
+
+.right{
+    flex:2;
+}
+
+.section{
+    margin-bottom:25px;
+}
+
+.section h3{
+    color:#00ffff;
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.section p,
+.section li{
+    line-height:1.8;
+    color:#e2e8f0;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    padding:12px 20px;
+    border-radius:25px;
+    background:linear-gradient(45deg,#00ffff,#3b82f6);
+    color:black;
+    font-weight:bold;
+}
+
+.name{
+    background:linear-gradient(to right,#00ffff,#ffffff,#38bdf8);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="left">
+
+<img src="rohan.jpg.jpeg" alt="Rohan">
+
+<h1 class="name">Rohan Choudhary</h1>
+<h2>B.Tech CSE Student</h2>
+
+<div class="social">
+
+<a href="mailto:rohanjsr123456@gmail.com">
+📧 Email Me
+</a>
+
+<a href="https://github.com/rohan6201" target="_blank">
+💻 GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/rohan-choudhary-b1b0b1328" target="_blank">
+🔗 LinkedIn
+</a>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="section">
+<h3>About Me</h3>
+<p>
+Hello! I am Rohan Choudhary, a Computer Science and Engineering student.
+I am passionate about technology, web development, programming,
+and learning modern software development skills.
+My goal is to become a skilled software engineer and build impactful projects.
+</p>
+</div>
+
+<div class="section">
+<h3>Education</h3>
+<ul>
+<li>🎓 B.Tech in Computer Science & Engineering</li>
+<li>🏫 RVS College of Engineering & Technology, Jamshedpur</li>
+<li>🏫 DAV Public School, Bistupur, Jamshedpur</li>
+</ul>
+</div>
+
+<div class="section">
+<h3>Skills</h3>
+<p>currently learning</p>
+
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">GitHub</div>
+<div class="skill">Learning Java</div>
+<div class="skill">Problem Solving</div>
+</div>
+
+</div>
+
+<div class="section">
+<h3>Hobbies</h3>
+<ul>
+<li>🏏 football, cricket</li>
+<li>🧠 Solving puzzles or brain games</li>
+<li>🎨Sketching and drawing</li>
+<li>📚 Reading Tech Articles</li>
+<li>🎯 Building Projects</li>
+</ul>
+<div class="project">
+
+    <h3>🌐 project</h3>
+    <p>A responsive portfolio website built using HTML and CSS.</p>
+</div>
+</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Rohan Choudhary | All Rights Reserved
+</footer>
+
+</body>
+</html>
